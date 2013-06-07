@@ -12,7 +12,7 @@ func Calculate(n int, toConsole bool) (result int) {
 		result = Calculate(n-2, toConsole) + Calculate(n-1, toConsole)
 	}
 	if toConsole == true {
-		print.Print(strconv.FormatInt(int64(result), 2))
+		print.Print(strconv.FormatInt(int64(result), 10))
 	}
 	return result
 }
